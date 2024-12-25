@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #ededed;
+    --foreground: #000000;
   }
 }
 
@@ -18,4 +18,39 @@ body {
   color: var(--foreground);
   background: var(--background) !important;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00194d;
+  padding-top: 10px;
+  padding-left: 80px;
+}
+
+h3 {
+  font-size: 100px;
+  font-weight: bold;
+  padding-left: 40px;
+  margin-bottom: -40px;
+}
+h4 {
+  font-size: 100px;
+  font-weight: bold;
+  padding-left: 250px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 22px;
+  padding-left: 40px;
+  text-align: justify;
+  padding-top: 20px;
 }
