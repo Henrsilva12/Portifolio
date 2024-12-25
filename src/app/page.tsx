@@ -1,8 +1,10 @@
+import Navbar from "./componentes/navbar";
+import "./globals.css";
+
 export default function Home() {
   return (
-    <>
-      <h1>Hello Word</h1>
-      <h2>oi</h2>
-    </>
+    <div className="container">
+      <Navbar />
+    </div>
   );
 }

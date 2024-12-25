@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #00072d; /* Cor do fundo */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  font-size: 1rem;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #fff; /* Cor do texto */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar button:hover {
+  color: #63b3ed; /* Cor ao passar o mouse */
+}
+
+.logo {
+}
+
+.email {
+  margin-left: -70px;
+}
+
+.email-link {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.email-link:hover {
+  color: #63b3ed;
+}
