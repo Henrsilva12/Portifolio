@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Image src="/imagens/Logo.png" alt="" width={34} height={43} />
+        <Image src="/imagens/logo1.svg" alt="logo" width={34} height={43} />
       </div>
       <div className="email">
         <a href="mailto:henrsilvasantos@gmail.com" className="email-link">
