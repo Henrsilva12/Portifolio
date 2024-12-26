@@ -1,0 +1,10 @@
+.profileImageContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #003ebb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para esconder a imagem que ultrapassar o círculo */
+}

@@ -1,4 +1,5 @@
 import Navbar from "./componentes/navbar";
+import ProfileImage from "./componentes/Profile";
 import "./globals.css";
 
 export default function Home() {
@@ -9,6 +10,15 @@ export default function Home() {
       <h2>Henrique Santos</h2>
       <h3>UI & UX</h3>
       <h4>Designer</h4>
+      {/*Foto*/}
+      <div className="photo">
+        <ProfileImage
+          src="/imagens/foto.svg"
+          alt="foto"
+          width={300}
+          height={300}
+        />
+      </div>
 
       <div className="description">
         <p>
