@@ -1,3 +1,4 @@
+import Timeline from "./componentes/experiencia";
 import Navbar from "./componentes/navbar";
 import ProfileImage from "./componentes/Profile";
 import "./globals.css";
@@ -6,20 +7,22 @@ export default function Home() {
   return (
     <div className="container">
       <Navbar />
-      <h1>Olá! Me chamo</h1>
-      <h2>Henrique Santos</h2>
-      <h3>UI & UX</h3>
-      <h4>Designer</h4>
-      {/*Foto*/}
-      <div className="photo">
-        <ProfileImage
-          src="/imagens/foto.svg"
-          alt="foto"
-          width={300}
-          height={300}
-        />
+      <div className="header-section">
+        <div className="titles">
+          <h1>Olá! Me chamo</h1>
+          <h2>Henrique Santos</h2>
+          <h3>UI & UX</h3>
+          <h4>Designer</h4>
+        </div>
+        <div className="photo">
+          <ProfileImage
+            src="/imagens/foto.svg"
+            alt="foto"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
-
       <div className="description">
         <p>
           Profissional com 2 anos de experiência em gestão de projetos ágeis,
@@ -30,16 +33,15 @@ export default function Home() {
           com Scrum e Kanban.
         </p>
       </div>
-
       {/*Experiências*/}
-      <div className="experiencias"></div>
-
+      <div className="experiencias">
+        <h5>Minhas Experiências</h5>
+        <Timeline />
+      </div>
       {/*Projects*/}
       <div className="projects"></div>
-
       {/*Skills*/}
       <div className="skills"></div>
-
       {/*Contate me*/}
       <div className="contactMe"></div>
     </div>

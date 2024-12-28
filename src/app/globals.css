@@ -20,6 +20,18 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+.header-section {
+  display: flex;
+  padding-top: 40px;
+  align-items: center; /* Alinha verticalmente */
+  gap: 300px; /* Espaçamento entre a foto e os títulos */
+}
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column; /* Empilha os elementos em dispositivos menores */
+    align-items: center;
+  }
+}
 h1 {
   font-size: 35px;
   font-weight: bold;
@@ -46,6 +58,15 @@ h4 {
   font-weight: bold;
   padding-left: 250px;
   margin-top: 0;
+}
+
+h5 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #3e89b9;
 }
 
 p {

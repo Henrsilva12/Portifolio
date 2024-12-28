@@ -35,10 +35,15 @@
 }
 
 .email {
-  /*margin-left: -830px;*/
-  display: none;
+  display: block;
+  margin-left: -830px;
 }
 
+@media (max-width: 768px) {
+  .email {
+    display: none;
+  }
+}
 .email-link {
   color: #fff;
   font-size: 15px;

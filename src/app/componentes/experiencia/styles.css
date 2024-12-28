@@ -1,0 +1,67 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  gap: 10px;
+  align-items: left;
+}
+
+.left h3 {
+  font-size: 30px;
+  margin: 0;
+  color: #344054;
+  padding-left: -10px;
+}
+
+.left h4 {
+  font-size: 20px;
+  color: #3e89b9;
+  margin: 0;
+  padding-left: 40px;
+}
+
+.left .period {
+  font-size: 15px;
+  color: #98a2b3;
+  padding-top: 20px;
+  padding-left: -10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px dashed #00072d;
+}
+
+.line {
+  width: 2px;
+  background-color: #00072d;
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+.right h3 {
+  font-size: 30px;
+  margin: -15px;
+  color: #344054;
+}
+
+.right p {
+  font-size: 1rem;
+  color: #98a2b3;
+  padding-left: 25px;
+}
