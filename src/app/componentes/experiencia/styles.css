@@ -12,7 +12,8 @@
   align-items: left;
 }
 
-.left h3 {
+.left h3,
+.right h3 {
   font-size: 30px;
   margin: 0;
   color: #344054;
@@ -44,14 +45,14 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px dashed #00072d;
+  border: 3px #00072d;
 }
 
 .line {
   width: 2px;
-  background-color: #00072d;
   flex-grow: 1;
-  margin-top: 5px;
+  border-left: 2px dashed #00072d; /* Linha vertical tracejada */
+  background: none; /* Remove fundo caso haja conflito */
 }
 
 .right h3 {
