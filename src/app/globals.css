@@ -69,9 +69,43 @@ h5 {
   color: #3e89b9;
 }
 
+h6 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #3e89b9;
+}
+
 p {
   font-size: 22px;
   padding-left: 40px;
   text-align: justify;
   padding-top: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  margin-top: 45px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #3e89b9;
+}
+
+.skill img {
+  display: block;
 }

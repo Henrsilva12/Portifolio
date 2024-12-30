@@ -14,10 +14,10 @@
   align-items: center;
   background: linear-gradient(
     135deg,
-    #001c55,
+    #0dabe9,
     #003ebb
   ); /* Gradiente de fundo */
-  padding: 5px; /* Espaço para criar a borda */
+  padding: 3px; /* Espaço para criar a borda */
 }
 
 .profileImageContainer img {

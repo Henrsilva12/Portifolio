@@ -1,6 +1,7 @@
 import Timeline from "./componentes/experiencia";
 import Navbar from "./componentes/navbar";
 import ProfileImage from "./componentes/Profile";
+import Image from "next/image";
 import "./globals.css";
 
 export default function Home() {
@@ -39,9 +40,62 @@ export default function Home() {
         <Timeline />
       </div>
       {/*Projects*/}
-      <div className="projects"></div>
+      <div className="projects">
+        <h6>Meus Projetos</h6>
+        <p>
+          Exploro criatividade e funcionalidade em cada projeto que desenvolvo.
+          Aqui estão algumas iniciativas que destacam minha experiência em UI/UX
+          design, gestão de projetos ágeis e desenvolvimento de soluções
+          inovadoras.
+        </p>
+      </div>
       {/*Skills*/}
-      <div className="skills"></div>
+      <div className="skills">
+        <h6>Minhas Skills</h6>
+        <p>
+          Transformo ideias em interfaces incríveis com Figma, organizo projetos
+          com ClickUp e Trello, e adiciono valor ao front-end com habilidades em
+          React.
+        </p>
+        <div className="skills-container">
+          <div className="skill">
+            <Image
+              src="/imagens/figma.svg"
+              alt="figma"
+              width={50}
+              height={115}
+            />
+            <p>Figma</p>
+          </div>
+          <div className="skill">
+            <Image
+              src="/imagens/react.svg"
+              alt="react"
+              width={78}
+              height={115}
+            />
+            <p>React</p>
+          </div>
+          <div className="skill">
+            <Image
+              src="/imagens/trello.svg"
+              alt="trello"
+              width={72}
+              height={115}
+            />
+            <p>Trello</p>
+          </div>
+          <div className="skill">
+            <Image
+              src="/imagens/clickup.svg"
+              alt="clickup"
+              width={72}
+              height={115}
+            />
+            <p>ClickUp</p>
+          </div>
+        </div>
+      </div>
       {/*Contate me*/}
       <div className="contactMe"></div>
     </div>
