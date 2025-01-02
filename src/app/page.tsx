@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
       {/*Contate me*/}
-      <div className="contactMe" style={{ padding: "2rem" }}>
+      <div className="contactMe">
         <h6>Contate me</h6>
         <p>
           Ficarei feliz em conversar sobre projetos e oportunidades. Entre em

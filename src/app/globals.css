@@ -109,3 +109,9 @@ p {
 .skill img {
   display: block;
 }
+
+.inputs {
+  margin-top: 50px;
+  margin-left: -700px;
+  padding: 1rem;
+}
