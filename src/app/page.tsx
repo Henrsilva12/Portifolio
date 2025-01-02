@@ -3,6 +3,7 @@ import Navbar from "./componentes/navbar";
 import ProfileImage from "./componentes/Profile";
 import Image from "next/image";
 import "./globals.css";
+import Contact from "./componentes/contact";
 
 export default function Home() {
   return (
@@ -97,7 +98,16 @@ export default function Home() {
         </div>
       </div>
       {/*Contate me*/}
-      <div className="contactMe"></div>
+      <div className="contactMe" style={{ padding: "2rem" }}>
+        <h6>Contate me</h6>
+        <p>
+          Ficarei feliz em conversar sobre projetos e oportunidades. Entre em
+          contato!
+        </p>
+        <div className="inputs">
+          <Contact />
+        </div>
+      </div>
     </div>
   );
 }
