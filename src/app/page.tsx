@@ -1,11 +1,19 @@
+"use client";
 import Timeline from "./componentes/experiencia";
 import Navbar from "./componentes/navbar";
 import ProfileImage from "./componentes/Profile";
 import Image from "next/image";
 import "./globals.css";
 import Contact from "./componentes/contact";
+import Footer from "./componentes/footer";
+import { useState } from "react";
+import { FilterButton } from "./componentes/buttons";
 
 export default function Home() {
+  const [activeFilter, setActiveFilter] = useState<string>("Web Design");
+
+  const filters = ["UI/UX", "Web Design", "App Design", "Plus"];
+
   return (
     <div className="container">
       <Navbar />
@@ -41,14 +49,41 @@ export default function Home() {
         <Timeline />
       </div>
       {/*Projects*/}
-      <div className="projects">
-        <h6>Meus Projetos</h6>
-        <p>
+      <div className="projects mt-16">
+        <h6 className="text-3xl font-bold text-center mb-4">Meus Projetos</h6>
+        <p className="text-center text-gray-700">
           Exploro criatividade e funcionalidade em cada projeto que desenvolvo.
           Aqui estão algumas iniciativas que destacam minha experiência em UI/UX
           design, gestão de projetos ágeis e desenvolvimento de soluções
           inovadoras.
         </p>
+        {/* Botões */}
+        <div className="flex justify-center space-x-4 my-4">
+          {filters.map((filter) => (
+            <FilterButton
+              key={filter}
+              text={filter}
+              isActive={activeFilter === filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-4 py-2 rounded ${
+                activeFilter === filter
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-200 text-gray-800"
+              } hover:bg-blue-500 hover:text-white`}
+            />
+          ))}
+        </div>
+        {/*Conteúdo do filtro*/}
+        <div className="project-cards text-center">
+          {activeFilter === "UI/UX" && <p>Exibindo projetos de UI/UX...</p>}
+          {activeFilter === "Web Design" && (
+            <p>Exibindo projetos de Web Design...</p>
+          )}
+          {activeFilter === "App Design" && (
+            <p>Exibindo projetos de App Design...</p>
+          )}
+          {activeFilter === "Plus" && <p>Exibindo projetos Plus...</p>}
+        </div>
       </div>
       {/*Skills*/}
       <div className="skills">
@@ -107,6 +142,10 @@ export default function Home() {
         <div className="inputs">
           <Contact />
         </div>
+      </div>
+      {/*Contate me*/}
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

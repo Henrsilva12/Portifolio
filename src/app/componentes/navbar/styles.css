@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -41,7 +42,9 @@
 
 @media (max-width: 768px) {
   .email {
-    display: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .email-link {
