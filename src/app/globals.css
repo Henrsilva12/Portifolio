@@ -22,6 +22,8 @@ body {
 
 .header-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 40px;
   align-items: center; /* Alinha verticalmente */
   gap: 300px; /* Espaçamento entre a foto e os títulos */
@@ -83,6 +85,23 @@ p {
   padding-left: 40px;
   text-align: justify;
   padding-top: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 18px; /* Reduz o tamanho da fonte para tablets */
+    padding-left: 20px; /* Diminui o espaçamento lateral */
+    padding-right: 20px; /* Adiciona espaçamento à direita */
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 16px; /* Reduz ainda mais o tamanho da fonte para smartphones */
+    padding-left: 10px; /* Margens menores em telas pequenas */
+    padding-right: 10px;
+    text-align: left; /* Alinha o texto à esquerda para melhorar a leitura */
+  }
 }
 
 .skills-container {
@@ -91,6 +110,7 @@ p {
   gap: 50px;
   flex-wrap: wrap; /* Permite quebra de linha se necessário */
   margin-top: 45px;
+  padding: 0 20px;
 }
 
 .skill {
@@ -100,6 +120,8 @@ p {
   text-align: center;
   justify-content: center;
   gap: 10px;
+  flex-basis: 150px;
+  flex-grow: ;
 }
 
 .skill p {
@@ -111,6 +133,39 @@ p {
 .skill img {
   display: block;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    gap: 20px; /* Reduz o espaçamento para telas menores */
+  }
+
+  .skill img {
+    max-width: 80px; /* Ajusta o tamanho das imagens */
+  }
+
+  .skill p {
+    font-size: 16px; /* Diminui o texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    flex-direction: column; /* Empilha os itens em telas muito pequenas */
+    align-items: center;
+  }
+
+  .skill {
+    flex-basis: auto; /* Remove a base fixa */
+  }
+
+  .skill img {
+    max-width: 70px; /* Ajusta ainda mais para telas pequenas */
+  }
+
+  .skill p {
+    font-size: 14px; /* Reduz o texto ainda mais */
+  }
 }
 
 .inputs {
