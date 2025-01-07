@@ -10,12 +10,20 @@
   margin: 0 auto;
   background-color: #f6fcff;
 }
-h1 {
-  color: #004bb5;
+.form2 h1 {
+  color: #00072d;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 1rem;
 }
 
 .form {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
   max-width: 400px;
   margin-left: 400px;
   padding-top: 10px;
@@ -23,13 +31,14 @@ h1 {
 }
 
 .form2 {
-  flex: 1;
+  display: flex;
   max-width: 300px;
   color: #00072d;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 10rem;
 }
 .form2 label {
   display: block;
@@ -37,6 +46,7 @@ h1 {
   color: #00072d;
   font-size: 20px;
   white-space: normal;
+  text-align: left;
 }
 .socialIcons {
   display: flex;

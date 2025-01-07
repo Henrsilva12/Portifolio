@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
 
       <div className="form2">
         <h1>Contato</h1>
-        <label>+55 (77) 99898-6939</label>
+        <label>+55 (77) 9 9898-6939</label>
         <label>henrsilvasantos@gmail.com</label>
         <div className="socialIcons">
           <a
